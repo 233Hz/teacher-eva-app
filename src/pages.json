@@ -1,0 +1,303 @@
+{
+  // 组件自动导入
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^u--(.*)": "uview-plus/components/u-$1/u-$1.vue",
+      "^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
+      "^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue",
+      // 自定义全局组件
+      "^h-(.*)": "@/components/h-$1.vue"
+    }
+  },
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/login/index",
+      "name": "login",
+      "style": {
+        "navigationBarTitleText": "登录"
+      },
+      "meta": {
+        "ignoreAuth": true
+      }
+    },
+    {
+      "path": "pages/index/index",
+      "name": "home",
+      "style": {
+        "navigationStyle": "custom"
+      },
+      "meta": {
+        "ignoreAuth": true
+      }
+    },
+    {
+      "path": "pages/evaluation/evaluation",
+      "name": "evaluation",
+      "style": {
+        "navigationStyle": "custom"
+      },
+      "meta": {
+        "ignoreAuth": true
+      }
+    },
+    {
+      "path": "pages/evaluation-result/evaluation-result",
+      "name": "evaluation-result",
+      "style": {
+        "navigationStyle": "custom"
+      },
+      "meta": {
+        "ignoreAuth": true
+      }
+    },
+    {
+      "path": "pages/evaluation-result/evaluation-result-details",
+      "name": "evaluation-result",
+      "style": {
+        "navigationStyle": "custom"
+      },
+      "meta": {
+        "ignoreAuth": true
+      }
+    },
+    {
+      "path": "pages/evaluation-status/evaluation-status",
+      "name": "evaluation-status",
+      "style": {
+        "navigationStyle": "custom"
+      },
+      "meta": {
+        "ignoreAuth": true
+      }
+    },
+    {
+      "path": "pages/my/index",
+      "name": "my",
+      "style": {
+        "navigationStyle": "custom"
+      },
+      "meta": {
+        "ignoreAuth": true
+      }
+    },
+    {
+      "path": "pages/error/403",
+      "name": "404",
+      "style": {
+        "navigationBarTitleText": "403"
+      },
+      "meta": {
+        "ignoreAuth": true
+      }
+    },
+    {
+      "path": "pages/error/404",
+      "name": "404",
+      "style": {
+        "navigationBarTitleText": "404"
+      },
+      "meta": {
+        "ignoreAuth": true
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "fontSize": "12px",
+    "selectedColor": "#009688",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "评分标准",
+        "iconPath": "static/tabbar/standard.png",
+        "selectedIconPath": "static/tabbar/standard-active.png"
+      },
+      {
+        "pagePath": "pages/evaluation/evaluation",
+        "text": "评教",
+        "iconPath": "static/tabbar/evaluation.png",
+        "selectedIconPath": "static/tabbar/evaluation-active.png"
+      },
+      {
+        "pagePath": "pages/evaluation-result/evaluation-result",
+        "text": "评教结果",
+        "iconPath": "static/tabbar/result.png",
+        "selectedIconPath": "static/tabbar/result-active.png"
+      },
+      {
+        "pagePath": "pages/evaluation-status/evaluation-status",
+        "text": "评价情况",
+        "iconPath": "static/tabbar/situation.png",
+        "selectedIconPath": "static/tabbar/situation-active.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "static/tabbar/my.png",
+        "selectedIconPath": "static/tabbar/my-active.png"
+      }
+    ]
+  },
+  "subPackages": [
+    {
+      "root": "evaluation",
+      "pages": [
+        {
+          "path": "teaching-routine/teaching-routine",
+          "name": "teaching-routine",
+          "style": {
+            "navigationStyle": "custom"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "work-attitude/work-attitude",
+          "name": "work-attitude",
+          "style": {
+            "navigationStyle": "custom"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "teaching-research/teaching-research",
+          "name": "teaching-research",
+          "style": {
+            "navigationStyle": "custom"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "teaching-feature/teaching-feature",
+          "name": "teaching-feature",
+          "style": {
+            "navigationStyle": "custom"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "teaching-effect/teaching-effect",
+          "name": "teaching-effect",
+          "style": {
+            "navigationStyle": "custom"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "bonus-item/bonus-item",
+          "name": "bonus-item",
+          "style": {
+            "navigationStyle": "custom"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "bonus-item/bonus-item-form",
+          "name": "bonus-item-form",
+          "style": {
+            "navigationStyle": "custom"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "penalty-item/penalty-item",
+          "name": "penalty-item",
+          "style": {
+            "navigationStyle": "custom"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "penalty-item/penalty-item-form",
+          "name": "penalty-item-form",
+          "style": {
+            "navigationStyle": "custom"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        }
+      ]
+    },
+    {
+      "root": "evaluation-status",
+      "pages": [
+        {
+          "path": "teaching-routine/teaching-routine",
+          "name": "teaching-routine",
+          "style": {
+            "navigationStyle": "custom"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "work-attitude/work-attitude",
+          "name": "work-attitude",
+          "style": {
+            "navigationStyle": "custom"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "teaching-research/teaching-research",
+          "name": "teaching-research",
+          "style": {
+            "navigationStyle": "custom"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "teaching-feature/teaching-feature",
+          "name": "teaching-feature",
+          "style": {
+            "navigationStyle": "custom"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "teaching-effect/teaching-effect",
+          "name": "teaching-effect",
+          "style": {
+            "navigationStyle": "custom"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        }
+      ]
+    }
+  ]
+}
